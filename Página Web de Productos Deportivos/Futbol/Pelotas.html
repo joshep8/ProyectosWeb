@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamiento</title>
+    <link rel="stylesheet" href="StyleFUT.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Imagenes/logoofic.jpg">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+            <button type="submit">Buscar</button>
+        </div>
+        <div class="user">
+            <a href="#"><img src="Imagenes/iconvent.jpg"></a>
+        </div>
+        <div class="cart">
+            <a href="#"><img src="Imagenes/Carrio.icon.jpg"></a>
+        </div>
+    </header>
+  
+    <nav id="Horizontal">
+        <div class="enlaces">
+            <a href="/Index/index.php">INICIO</a>  
+        </div>
+        <div class="dropdown">
+            <a href="#">TIENDA</a>  
+            <div class="dropdown-content">
+                <a href="/Futbol/futbol.html">Fútbol</a>
+                <a href="/Voley/Volleyball.html">Vóley</a>
+                <a href="/Tenis/tenis.html">Tennis</a>
+                <a href="/Basquet/basquetart2.php">Basquet</a>
+            </div>
+        </div>
+        <div class="enlaces">
+            <a href="/QuienesSomos/QuienesSomos.html">QUIENES SOMOS</a>
+        </div>
+        <div class="enlaces">
+            <a href="/Contacto/Contacto.html">CONTACTO</a>
+        </div>
+    </nav>
+    <br><br><br><br><br><br><br><br><br>
+    
+    <section>
+        <div class="item" id="Titulo">
+            <p>FÚTBOL/PELOTAS</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="lateral">
+            <p>CATEGORIA</p>
+            <hr>
+            <div class="categoria">
+                <a href="Pelotas.html">Pelotas</a>
+                <a href="Equipamiento.html">Equipamiento</a>
+                <a href="Accesorios.html">Accesorios</a>
+            </div>
+            <br>
+            <hr>
+            <p>MARCA</p>
+            <hr>
+            <div class="marca">
+                <input type="checkbox" id="adidas" name="brand" value="Adidas">Adidas<br><br><br>
+                <input type="checkbox" id="nike" name="brand" value="Nike">Nike<br><br><br>
+                <input type="checkbox" id="puma" name="brand" value="Puma">Puma<br><br><br>
+            </div>
+        </section>
+
+        <section id="Futbol">
+            <div class="columna product" data-brand="Adidas">
+                <img id="Producto" src="https://outletshoesmx.com/cdn/shop/files/1_a9ab3b50-7cfb-4823-829e-a8b2169c2b36.png?v=1705712035">
+                <h2 class="tipo">Adidas</h2>
+                <h3 class="titulo">Pelota de La Champions</h3>
+                <h3 class="precio">
+                    <span style="text-decoration: line-through;">S/199.00</span> S/179.00
+                </h3>
+                <br>
+                <h3 class="añadir-carrito">
+                    <img class="icono-carrito" src="https://cdn-icons-png.flaticon.com/512/107/107831.png"> AÑADIR AL CARRITO
+                </h3>
+            </div>
+
+            <div class="columna product" data-brand="Puma">
+                <img id="Producto" src="https://elpais.com/especiales-branded/es-laliga/2019/dentro-del-nuevo-balon-del-futbol-espanol/img/s5-0.png">
+                <h2 class="tipo">Puma</h2>
+                <h3 class="titulo">Pelota de LaLiga</h3>
+                <h3 class="precio">
+                    <span style="text-decoration: line-through;">S/259.00</span> S/219.00
+                </h3>
+                <br>
+                <h3 class="añadir-carrito">
+                    <img class="icono-carrito" src="https://cdn-icons-png.flaticon.com/512/107/107831.png"> AÑADIR AL CARRITO
+                </h3>
+            </div>
+
+            <div class="columna product" data-brand="Nike">
+                <img id="Producto" src="https://acdn.mitiendanube.com/stores/001/220/451/products/diseno-sin-titulo-2021-08-31t184938-3382-5e0244bb05b714beed16304583859710-240-0.png">
+                <h2 class="tipo">Nike</h2>
+                <h3 class="titulo">Pelota de CopaLibertadores</h3>
+                <h3 class="precio">
+                    <span style="text-decoration: line-through;">S/219.00</span> S/199.00
+                </h3>
+                <br>
+                <h3 class="añadir-carrito">
+                    <img class="icono-carrito" src="https://cdn-icons-png.flaticon.com/512/107/107831.png"> AÑADIR AL CARRITO
+                </h3>
+            </div>
+        </section>
+    </div>
+
+    <script src="filtro.js" defer></script>
+</body>
+</html>

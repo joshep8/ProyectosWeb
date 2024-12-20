@@ -1,0 +1,463 @@
+body {
+    padding-top: 210px; /* Ajusta según la altura de tu barra de navegación y menú */
+}
+header {
+    background-image: url('https://th.bing.com/th/id/OIP.NllQBmZgbbo4Nz2e6rjz4AHaHa?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    padding: px;
+    text-align: center;
+    width: 100%; /* Ancho del 100% de la ventana */
+    position: fixed; /* Fija el encabezado en la parte superior de la ventana */
+    top: 0; /* Coloca el encabezado en la parte superior */
+    z-index: 9999; /* Asegura que el encabezado esté encima de otros elementos */
+    height: 120px; /* Aumenta la altura del encabezado */
+    display: flex; /* Usa flexbox para alinear verticalmente el contenido */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente con el máximo espacio entre ellos */
+    align-items: center; /* Alinea verticalmente el contenido en el centro */
+}
+.logo {
+    flex: 5; /* El logo ocupará una cuarta parte del encabezado */
+    width: 200px; /* Ajusta el ancho del contenedor del logo */
+    height: 100%; /* Altura automática para mantener la proporción de la imagen */
+}
+
+.search-bar {
+    flex: 10; /* Haciendo que el elemento search-bar ocupe más espacio */
+   
+}
+.search-bar input[type="text"] {
+    border: 2px solid transparent; /* Establecer el color del borde como transparente */
+    border-radius: 20px; 
+    background-color: #e9e8ee;
+    width: 80%; /* Hacer que la caja de texto ocupe el 80% del espacio disponible */
+    height: 30px; /* Ajustar la altura del campo de texto */
+}
+
+.search-bar button{
+    border: 2px solid transparent; /* Establecer el color del borde como transparente */
+    border-radius: 20px; 
+    background-color: #857373;
+    height: 30px; /* Ajustar la altura del campo de texto */
+}
+
+.user,
+.cart {
+    flex: 2; /* Los elementos restantes se dividirán en partes iguales */
+}
+
+.logo img {
+    width: 100%; /* La imagen del logo ocupará todo el espacio del contenedor */
+    height: 100%; /* Altura automática para mantener la proporción de la imagen */
+}
+
+.user img,
+.cart img {
+    width: 50px; /* Modifica el ancho de la imagen del usuario y del carrito */
+    height: auto; /* Altura automática para mantener la proporción de la imagen */
+}
+#Horizontal {
+    background-image: url('https://cartaral.com/wp-content/uploads/2021/05/RAL-5026-Azul-noche-perlado.gif'); /* Cambia 'ruta/de/tu/imagen.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Fija la barra de navegación en la parte superior de la ventana */
+    top: 121px; /* Aumenta la distancia desde la parte superior para dejar espacio para el encabezado */
+    z-index: 999; /* Asegura que la barra de navegación esté encima de otros elementos */
+    display: flex; /* Usando flexbox */
+    flex-wrap: wrap; /* Envolver las columnas si no caben en una sola fila */
+    justify-content: space-between; /* Espaciado uniforme entre las columnas */
+}
+.enlaces a {
+    font: bold 18px Arial, sans-serif;
+    color: white;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.enlaces {
+    width: 20%; /* Ajustar el ancho para que tres columnas se ajusten con el espacio entre ellas */
+    text-align: center;
+    border: 2px solid transparent; /* Establecer el color del borde como transparente */
+    border-radius: 20px; 
+    transition: box-shadow 0.3s; /* Transición suave de la sombra */
+    margin: 0 auto; /* Centrar los enlaces */
+}
+
+.enlaces:hover {
+    background-color:   #2A3756;
+}
+
+.dropdown {
+    width: 20%; /* Ajustar el ancho para que tres columnas se ajusten con el espacio entre ellas */
+    text-align: center;
+    border: 2px solid transparent; /* Establecer el color del borde como transparente */
+    border-radius: 20px; 
+    transition: box-shadow 0.3s; /* Transición suave de la sombra */
+    margin: 0 auto; /* Centrar los enlaces */
+    }
+.dropdown a{
+    font: bold 18px Arial, sans-serif;
+    color: white;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+.dropdown:hover {
+    background-color:   #2A3756;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px; 
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+    
+    #Titulo {
+        width: 99%;
+        text-align: center;
+        background-image: url( 'https://media.istockphoto.com/id/185122903/es/foto/campo-de-f%C3%BAtbol.jpg?s=612x612&w=0&k=20&c=PGmynfO6hGaUmRITMWROy97G_HWCfqY83wPgec9OL3o=') ;
+        font: bold 26px Verdana, sans-serif;
+        color: white;
+        background-size: cover;
+        background-position: center;
+        padding: 10px;
+        border-radius: 20px; 
+    }
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .main-container {
+        width: 530px; /* Asegura que usa todo el ancho disponible */
+    }
+    
+      .cart-container {
+        flex: 3; /* Aumenta la proporción de espacio que puede ocupar el carrito */
+        min-width: 300px; /* Establece un ancho mínimo para asegurar la visibilidad */
+        max-width: 540px; /* Mantiene un ancho máximo para evitar que ocupe demasiado */
+        padding: 20px;
+        background: #fff;
+        margin-left: -260px; /* Aumenta este valor según necesites para mover el carrito hacia la derecha */
+    }
+    .summary-container {
+        flex: 1; /* Mantiene el resumen más pequeño en comparación */
+        min-width: 150px; /* Establece un ancho mínimo */
+        max-width: 300px; /* Establece un ancho máximo para evitar que sea demasiado grande */
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background: #fff;
+    }
+    .order-summary h2 {
+        font-size: 24px; /* Tamaño de fuente para el título */
+        color: #333; /* Color del texto */
+        margin-bottom: 10px; /* Espacio debajo del título */
+        text-align: left; /* Centrar el texto */
+    }
+    #cart-items {
+        flex: 2; /* Ocupa el 60% del espacio disponible */
+        margin-right: 20px;
+    }
+    
+    .order-summary {
+        flex: 1; /* Ocupa el 40% del espacio disponible */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .order-summary p, .order-summary button {
+        text-align: left;
+        width: 100%;
+    }
+    
+    .delete-btn {
+        display: none;
+    }
+    .delete-btn:hover {
+        display: none;
+    }
+    
+    .finalize-btn {
+        display: none;
+    }
+    
+    
+    /* Estilos adicionales para los items del carrito */
+    #cart-items li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1.5px solid #928f8f;
+    }
+    .product-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+    
+    .product-name {
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .product-price {
+        color: #242424;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    
+    
+    img {
+        width: 400px; /* Ajusta según tus necesidades */
+        height: auto;
+        margin-right: 15px;
+    }
+    
+    
+    .quantity-controls {
+        display: none;
+    }
+    
+    .quantity-controls button {
+        display: none;
+    }
+    .card {
+        max-width: 768px;
+        width: 100%;
+        margin:  40px auto;  /* Ajusta el margen superior para empujar el card hacia abajo */
+        padding: 16px;
+        transform: translateX(-280px);
+    }
+    
+    .text-details {
+        color: #4a5568;
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+    }
+    
+    .link-style {
+        color: #4299e1;
+        text-decoration: none;
+    }
+    
+    .section {
+        margin-top: 24px;
+    }
+    
+    .section-title {
+        color: #2d3748;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    
+    .list-style {
+        list-style: none;
+        margin-top: 8px;
+        padding-left: 0;
+    }
+    
+    .list-item {
+        display: flex;
+        align-items: start;
+    }
+    
+    .icon-style {
+        color: #4299e1;
+        margin-right: 8px;
+        font-size: 24px;
+    }
+    .cart-icon {
+        font-size: 54px; /* Ajusta el tamaño según tus preferencias */
+    }
+    
+    .divider {
+        border-color: #e2e8f0;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    
+    .flex-center {
+        display: flex;
+        align-items: center;
+    }
+    .payment-container {
+        
+        max-width: 500px;
+        padding: 2rem;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        background-color: white;
+        width: auto;
+
+    }
+    .header {
+        margin-bottom: 1.5rem;
+    }
+    .header h2 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #4b5563;
+    }
+    .icons {
+        display: flex;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+    .icons i {
+        font-size: 1.875rem;
+        margin-right: 0.5rem;
+    }
+    .icons .visa {
+        color: #1a1f71; /* Visa blue */
+    }
+    .icons .mastercard {
+        color: #eb001b; /* Mastercard red */
+    }
+    .icons .amex {
+        color: #007bc1; /* AMEX blue */
+    }
+    .icons .diners {
+        color: #006493; /* Diners Club blue */
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    .form-group label {
+        display: block;
+        color: #4b5563;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+    .form-group input, .form-group select {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 0.25rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        color: #374151;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .form-group .icon {
+        position: absolute;
+        right: 0.75rem;
+        top: 0.75rem;
+        color: #9ca3af;
+    }
+    .form-group .relative {
+        position: relative;
+    }
+    .order-button {
+        width: 100%;
+        background-color:#2A3756;
+        color: white;
+        padding: 0.75rem;
+        font-size: 1rem;
+        font-weight: 700;
+
+    }
+    .order-button:hover {
+        background-color: #486ecf;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    .text-gray-600 {
+        color: #4b5563;
+    }
+    .text-sm {
+        font-size: 0.875rem;
+    }
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Esto coloca un espacio entre los contenedores */
+        align-items: flex-start; /* Alinea los contenedores en la parte superior */
+        
+    }
+    
+    .card, .payment-container {
+        flex: 1 1 48%; /* Esto hace que cada contenedor ocupe hasta el 48% del espacio disponible */
+        margin: 1%; /* Pequeño margen para no tocar los bordes */
+    }
+    .card {
+        margin-right: 0; /* Reduce el margen derecho para acercar el card al contenedor de pago */
+        transform: translateX(0); /* Elimina cualquier transformación previa que desplace el card */
+    }
+    @media (max-width: 1200px) {
+        .card, .payment-container {
+            flex-basis: 100%; /* En pantallas pequeñas, cada contenedor ocupa el 100% del ancho */
+            max-width: 100%;
+        }
+    }
+    .cart {
+        position: relative; /* Establece la posición relativa para posicionar absolutamente el contador */
+    }
+    
+    .cart-count {
+        position: absolute; /* Posición absoluta para colocar exactamente donde necesitas */
+        top: -19px; /* Colocar justo arriba de la imagen */
+        right: 138px; /* Colocar justo al lado derecho de la imagen */
+        background-color: rgb(54, 129, 31); /* Color de fondo del contador */
+        color: white; /* Color del texto */
+        font-size: 24px; /* Tamaño de la fuente del contador, ajustado para no ser demasiado grande */
+        padding:6px; /* Padding ajustado para un contorno más ajustado */
+        border-radius: 50%; /* Borde redondo para dar forma de círculo */
+        display: flex; /* Usar flexbox para centrar el contenido */
+        align-items: center; /* Centrar verticalmente el texto dentro del círculo */
+        justify-content: center; /* Centrar horizontalmente el texto dentro del círculo */
+        font-weight: bold; /* Hacer el texto en negrita para que sea más legible */
+        box-shadow: 0px 0px 4px #000; /* Sombra más suave para que no sea demasiado prominente */
+        z-index: 10; /* Asegurar que el contador esté por encima de otros elementos */
+    }
+    .message-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5); /* Opcional: un fondo oscuro semi-transparente */
+    }
+    
+    .alert-success, .alert-danger {
+        margin: 0; /* Quita el margen para alineación correcta */
+        width: 50%; /* O ajusta según lo necesites */
+        text-align: center;
+        padding: 20px;
+        font-size: 34px;
+        color: #333;
+    }
+    
+    .alert-success {
+        background-color: #d4edda;
+        border: 1px solid #c3e6cb;
+    }
+    
+    .alert-danger {
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+    }

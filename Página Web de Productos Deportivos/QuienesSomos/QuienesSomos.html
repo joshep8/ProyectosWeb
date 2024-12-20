@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis</title>
+    <link rel="stylesheet" href="EstiloQuienesSomos.css" type="text/css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="/Imagenes/logoofic.jpg" alt="Logo Tenis">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+            <button type="submit">Buscar</button>
+        </div>
+
+        <div class="user">
+            <a href="#"><img src="/Imagenes/iconvent.jpg" alt="Icono de Usuario"></a>
+            <div class="dropdown-content">
+                <section id="InicarSesion">
+                    <h3> Bienvenido</h3>
+                    <p>Inicia sesión y podrás consultar el estado de tus pedidos, tu libreta de direcciones y todo lo que necesites. </p>
+                    <center>
+                        <a href="Sesion.html">Iniciar sésion</a>
+                    </center>
+                    
+                </section>
+
+                <section id="CrearCuenta">
+                    <h3>  ¿Quieres una experiencia de compra más rápida?</h3>
+                    <p>Descuentos exclusivos</p>
+                    <center>
+                    <a href="/CrearCuenta/CreaCuenta.html">Crear Cuenta</a>
+                    </center>
+                </section>
+            </div>
+        </div>
+
+
+
+        <div class="cart">
+            <a href="#"><img src="/Imagenes/Carrio.icon.jpg" alt="Icono de Carrito"></a>
+        </div>
+    </header>
+    
+  
+    <nav id="Horizontal">
+        <div class="enlaces">
+        <a href="/Index/index.php" >INICIO</a>  
+    </div>
+
+
+    <div class="dropdown">
+        <a href="/Index/index.php" >TIENDA</a>  
+        <div class="dropdown-content">
+            <a href="/Futbol/futbol.html">Fútbol</a>
+            <a href="/Voley/Volleyball.html">Vóley</a>
+            <a href="/Tenis/tenis.html">Tennis</a>
+            <a href="/Basquet/basquetart2.html">Básquet</a>
+        </div>
+    </div>
+
+
+    <div class="enlaces">
+        <a href="QuienesSomos.html" >QUIENES SOMOS</a>
+    </div>
+    <div class="enlaces">
+        <a href="/Contacto/Contacto.html">CONTACTO</a>
+        </div>
+ 
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <section>
+        <div class="item "id="Titulo1">
+            <h1>ACERCA DE NOSOTROS</h1>
+        </div>
+
+
+    </section>
+
+    <div id="contenido1" >
+        <br>    <br>
+        <section id="OvContra">
+            <center>
+                <img id=logo src="/Imagenes/logoofic.jpg" alt="Logo Tenis"> 
+            </center>
+            <p>En Sports Center, nos apasiona el mundo del deporte y nos esforzamos por ofrecer a nuestros clientes una experiencia de compra excepcional.Nos comprometemos a proporcionar productos de alta calidad para satisfacer las necesidades de los deportistas de todos los niveles.  
+            Nuestra misión en Sports Center es motivar e inspirar a las personas a adoptar un estilo de vida activo y saludable a través del deporte. Creemos en los beneficios del ejercicio físico y queremos ser tu aliado en tu viaje hacia una vida más activa y equilibrada.  
+            En Sports Center, encontrarás una amplia selección de productos deportivos, desde ropa y calzado especializado hasta equipos y accesorios para una variedad de deportes, incluyendo fútbol, baloncesto, tenis, running, fitness y más. Trabajamos con las principales marcas del mercado para garantizar la calidad y el rendimiento de cada producto que ofrecemos.
+            Nuestro equipo en Sports Center está formado por entusiastas del deporte, comprometidos en brindarte el mejor servicio y asistencia en cada paso de tu experiencia de compra. Ya sea que estés buscando mejorar tu rendimiento deportivo, mantenerte en forma o simplemente disfrutar del deporte, en Sports Center estamos aquí para ayudarte a alcanzar tus objetivos.
+             Únete a la comunidad de Sports Center y comienza tu viaje hacia un estilo de vida más activo y saludable hoy mismo. ¡Bienvenido a Sports Center, tu destino online para todo lo relacionado con el deporte!</p>    
+             <br>    <br> <br>    <br>
+
+
+             <div class="item "id="Titulo1">
+             <h1>CRM de Fidelización de Clientes</h1>
+            </div>
+            
+             <main >
+                 <section id="add-client">
+                     <h2>Añadir Cliente</h2>
+                     <form id="client-form">
+                         <input type="hidden" id="client-id">
+                         <label for="name">Nombre y Apellidos:</label>
+                         <input type="text" id="name" required>
+                         <label for="email">Email:</label>
+                         <input type="email" id="email" required>
+                         <label for="phone">Teléfono:</label>
+                         <input type="tel" id="phone" required>
+                         <button type="submit" id="add-btn">Añadir</button>
+                         <button type="button" id="update-btn" style="display: none;">Actualizar</button>
+                     </form>
+                 </section>
+                
+                 <section id="search-client">
+                     <h2>Buscar Cliente</h2>
+                     <input type="text" id="search" placeholder="Buscar por nombre...">
+                 </section>
+                 <section id="client-list">
+                     <h2>Lista de Clientes</h2>
+                     <table>
+                         <thead>
+                             <tr>
+                                 <th>Nombre</th>
+                                 <th>Email</th>
+                                 <th>Teléfono</th>
+                                 <th>Acciones</th>
+                             </tr>
+                         </thead>
+                         <tbody id="clients">
+                             <!-- Clientes serán añadidos aquí -->
+                         </tbody>
+                     </table>
+                 </section>
+         
+                 
+         
+             </main>
+             <script src="CRM.js"></script>
+         </section>
+
+        
+
+
+    </div>
+    <br><br><br><br>    <br> <br>    <br>
+  
+
+
+<footer class="footer" id="contact-info">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>SPORTCENTER.PE</h3>
+            <p>Somos una Tienda especializada en producción y distribución de material deportivo.</p>
+            <p>RAZÓN SOCIAL:SPORT CENTER PERU E.I.R.L.
+            <br>RUC: 20608922114</p>
+        </div>
+        <div class="footer-section">
+            <h3>CONTÁCTANOS</h3>
+            <p>Teléfono: 967 116 758</p>
+                <p>Fijo: (01) 7482391</p>
+        </div>
+        <div class="footer-section">
+            <h3>HORARIO DE ATENCIÓN</h3>
+            <p>Lunes a Sábado: <br> 10:00 am – 8:00 pm</p>
+            <p>Domingo: 10:00 am – 5:00 pm</p>
+        </div>
+        <div class="footer-section">
+            <h3>Nuestra Empresa</h3>
+            <p>Sobre Nosotros</p>
+            <p>Política de Privacidad</p>
+            <p>Política de Envío</p>
+            <p>Términos y Condiciones</p>
+            <p>Contáctenos</p>            
+        </div>
+        <p>&copy; 2024 Tienda de Equipos Deportivos. Todos los derechos reservados.</p>
+    </div> 
+</footer>
+
+
+
+</body>
+</html>

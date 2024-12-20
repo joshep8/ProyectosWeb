@@ -1,0 +1,270 @@
+header {
+    background-image: url('https://th.bing.com/th/id/OIP.NllQBmZgbbo4Nz2e6rjz4AHaHa?rs=1&pid=ImgDetMain'); /* Cambia 'ruta/de/tu/imagen.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    color:#2A3756;
+    padding: 10px;
+    text-align: center;
+    width: 100%; /* Ancho del 100% de la ventana */
+    position: fixed; /* Fija el encabezado en la parte superior de la ventana */
+    top: 0; /* Coloca el encabezado en la parte superior */
+    z-index: 999; /* Asegura que el encabezado esté encima de otros elementos */
+    height: 120px; /* Aumenta la altura del encabezado */
+    display: flex; /* Usa flexbox para alinear verticalmente el contenido */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente con el máximo espacio entre ellos */
+    align-items: center; /* Alinea verticalmente el contenido en el centro */
+}
+
+.logo {
+    flex: 5; /* El logo ocupará una cuarta parte del encabezado */
+    width: 200px; /* Ajusta el ancho del contenedor del logo */
+    height: 100%; /* Altura automática para mantener la proporción de la imagen */
+}
+
+.search-bar {
+    flex: 10; /* Haciendo que el elemento search-bar ocupe más espacio */
+   
+}
+
+.search-bar input[type="text"] {
+    border: 2px solid transparent; /* Establecer el color del borde como transparente */
+    border-radius: 20px; 
+    background-color: #e9e8ee;
+    width: 80%; /* Hacer que la caja de texto ocupe el 80% del espacio disponible */
+    height: 30px; /* Ajustar la altura del campo de texto */
+}
+
+.search-bar button{
+    border: 2px solid transparent; /* Establecer el color del borde como transparente */
+    border-radius: 20px; 
+    background-color: #379754;
+    height: 30px; /* Ajustar la altura del campo de texto */
+}
+
+.user,
+.cart {
+    flex: 2; /* Los elementos restantes se dividirán en partes iguales */
+}
+
+.logo img {
+    width: 100%; /* La imagen del logo ocupará todo el espacio del contenedor */
+    height: 100%; /* Altura automática para mantener la proporción de la imagen */
+}
+
+.user img,
+.cart img {
+    width: 50px; /* Modifica el ancho de la imagen del usuario y del carrito */
+    height: auto; /* Altura automática para mantener la proporción de la imagen */
+}
+
+#Horizontal {
+    background-image: url('https://cartaral.com/wp-content/uploads/2021/05/RAL-5026-Azul-noche-perlado.gif'); /* Cambia 'ruta/de/tu/imagen.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Fija la barra de navegación en la parte superior de la ventana */
+    top: 140px; /* Aumenta la distancia desde la parte superior para dejar espacio para el encabezado */
+    z-index: 999; /* Asegura que la barra de navegación esté encima de otros elementos */
+   
+    display: flex; /* Usando flexbox */
+    flex-wrap: wrap; /* Envolver las columnas si no caben en una sola fila */
+    justify-content: space-between; /* Espaciado uniforme entre las columnas */
+    
+ 
+}
+.enlaces a {
+    font: bold 18px Arial, sans-serif;
+    color: white;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.enlaces {
+    width: 20%; /* Ajustar el ancho para que tres columnas se ajusten con el espacio entre ellas */
+    text-align: center;
+    border: 2px solid transparent; /* Establecer el color del borde como transparente */
+    border-radius: 20px; 
+    transition: box-shadow 0.3s; /* Transición suave de la sombra */
+    margin: 0 auto; /* Centrar los enlaces */
+}
+
+.enlaces:hover {
+    background-color:   #2A3756;
+}
+
+
+.dropdown {
+    width: 20%; /* Ajustar el ancho para que tres columnas se ajusten con el espacio entre ellas */
+    text-align: center;
+    border: 2px solid transparent; /* Establecer el color del borde como transparente */
+    border-radius: 20px; 
+    transition: box-shadow 0.3s; /* Transición suave de la sombra */
+    margin: 0 auto; /* Centrar los enlaces */
+    }
+.dropdown a{
+    font: bold 18px Arial, sans-serif;
+    color: white;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+.dropdown:hover {
+    background-color:  #2A3756;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px; 
+    }
+
+   .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+#Titulo {
+    width: 99%;
+    text-align: center;
+    background-image: url( 'Imagenes/PELOTATITULO.PNG') ;
+    font: bold 26px Verdana, sans-serif;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    border-radius: 20px; 
+
+}
+
+
+
+
+#lateral {
+    background-color: #e9e8ee;
+    font: bold 18px Arial, sans-serif;
+    color: black;
+    text-align: center;
+    border-right: 2px solid gray; /* Agregar borde negro al lado derecho */
+}
+
+
+
+
+
+/* Estilos para los enlaces dentro del contenido del menú d*/
+.categoria a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* Estilos para los enlaces dentro del contenido del menú desplegable cuando se pasa el cursor sobre ellos */
+.categoria a:hover {
+    text-decoration: underline; /* Agrega un subrayado cuando se pasa el cursor sobre los enlaces */
+}
+
+
+.marca{
+    color: black;
+    padding: 12px 16px;
+    text-align: center;
+   
+}
+
+
+#Tenis {
+    width: 96%;
+    padding: 2%;
+    background-color:  #e9e8ee;
+    display: flex; /* Usando flexbox */
+    flex-wrap: wrap; /* Envolver las columnas si no caben en una sola fila */
+    justify-content: space-between; /* Espaciado uniforme entre las columnas */
+}
+
+
+
+.columna {
+    width: 23%;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 20px;
+    border: 2px solid transparent; /* Borde transparente */
+    border-radius: 20px; 
+    transition: box-shadow 0.3s, border-color 0.3s; /* Añade la transición del color del borde */
+}
+
+.columna:hover {
+    border-color: black; /* Cambia el color del borde al pasar el cursor */
+}
+
+#Producto {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+.marca {
+    color: black;
+    
+}
+
+.titulo {
+    color: #6d776fc5;
+}
+
+.precio {
+    color: red;
+}
+span{
+    color:  #6d776fc5;
+}
+
+.añadir-carrito {
+    color: white;
+    background-color: #61ee57;
+    border-radius: 20px; 
+
+    padding: 10px;
+    display: inline-block; 
+   
+}
+.icono-carrito {
+    width: 30px; /* Ancho del icono */
+    height: 30px; /* Altura del icono */
+    vertical-align: middle; /* Alineación vertical */
+}
+
+.añadir-carrito:hover {
+    background-color: #32974b;
+    border-radius: 20px; 
+}
+
+
+
+
+.container {
+    display: flex;
+}
+
+#lateral {
+    width: 20%;
+}
+
+#Tenis {
+    width: 80%;
+}

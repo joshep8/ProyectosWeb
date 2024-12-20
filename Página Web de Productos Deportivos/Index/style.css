@@ -1,0 +1,801 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+ /* text-transform: capitalize */
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 10;
+  
+}
+.navbar-top {
+  
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 10px; 
+  width: 100%;
+}
+
+.logo {
+    height: 80px; 
+    margin-right: 10px; 
+  }
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 60px; 
+  }
+
+.navbar-icons a {
+  color:#28a745;
+  margin-left: 4rem;
+  font-size: 2rem; 
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(206, 205, 205);
+  border-radius: 5px; 
+  padding: 0.5rem;
+  flex-grow: 1; 
+  max-width: 580px; /* O el ancho máximo que prefieras */
+  margin: 0 20px;
+}
+.search-bar input {
+    border: none;
+    outline: none;
+    margin-right: 0.5rem;
+    width: 100%; /* Asegura que el input ocupe todo el ancho de la barra de búsqueda */
+    padding: 0.5rem; /* Aumenta el relleno si es necesario */
+    background-color:rgb(206, 205, 205);
+}
+.search-bar i {
+    color: #003366; 
+}
+.navbar-bottom {
+  width: 100%;
+  text-align: center;
+  background-color: #293036;
+  padding: 1rem 0;
+}
+
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 180px; /* Espacio entre los enlaces del menú */
+  
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.navbar-menu a:hover {
+    background-color: #0a4b3b; 
+}
+
+.form-register {
+  width: 400px;
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: rgb(0, 0, 0);
+  box-shadow: 7px 13px 37px #adabab;
+  border-radius: 4px; /* Si quieres mantener las esquinas redondeadas */
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #e3e7e9;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #d4d0d0;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+ 
+}
+
+.form-register a:hover {
+  color: rgb(13, 65, 179);
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #48ace6;
+  border: none;
+  padding: 12px;
+  color: rgb(0, 0, 0);
+  margin: 16px 0;
+  font-size: 16px;
+}
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Se mantiene en su lugar */
+  z-index: 1; /* Situado encima de todo */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
+  overflow: auto; /* Habilita el scroll si es necesario */
+  background-color: rgb(0,0,0); /* Fondo negro */
+  background-color: rgba(0,0,0,0.4); /* Negro con opacidad */
+}
+
+/* Contenido del modal */
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:none;
+  padding: 20px;
+  border: none;
+  width: auto;
+  max-width: 500px; /* Ancho máximo del modal */
+  box-shadow: none;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Animación para que el modal aparezca deslizándose desde arriba */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 50%; opacity: 1}
+}
+
+.close {
+  color: #797474;
+  position: absolute;
+  right: 40px;
+  top: 130px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+
+.close:hover,
+.close:focus {
+  color: black;
+cursor: pointer;
+}
+.modal:target .modal-content {
+  display: block; /* Asegúrate de que se muestre */
+}
+
+
+
+
+.form-register {
+  font-family: 'calibri', sans-serif;
+  color: rgb(0, 0, 0);
+  /* Resto de tus estilos .form-register aquí */
+}
+
+/* Estilo para el botón que abrirá el modal */
+#loginBtn {
+  cursor: pointer;
+}
+
+/* Mostrar modal cuando :target coincide con su ID */
+.modal:target {
+  display: block;
+}
+
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+.navbar img {
+  height: 125px;
+}
+
+.search-icon {
+position: relative;
+left: -30px;
+top: -2px;
+
+}
+.menu {
+  list-style: none;
+  padding: 0;
+}
+.menu li {
+  display: inline;
+  margin-right: 20px;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative; 
+  height: 600px; 
+  margin-top: 180px; 
+}
+.hero iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Establece la relación de aspecto del iframe */
+  border: none;
+}
+.section-title {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+@keyframes animated-stroke {
+  0%{
+     
+      stroke: #0063e5; 
+      
+    stroke-dasharray: 0 10%;
+  }
+  50%{
+      stroke: #0063e5;  
+  }
+
+  100%{
+      stroke: #00acac; 
+    stroke-dasharray: 10% 0%;
+    stroke-dashoffset: 25%;
+  }
+}
+.categories {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 75px;
+}
+/*Slider*/
+.pre-btn,
+.nxt-btn{
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+.nxt-btn {
+  right: 0;
+}
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+.featured-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 75px;
+}
+.card {
+  width: 250px;
+  height: 370px;
+  border-radius: 12px;
+  transform-style: preserve-3d;
+}
+.card.blue {
+  background: linear-gradient(135deg, #09AFFF, #125575);
+}
+.card.purple {
+  background: linear-gradient(135deg, #5911F2, #290987);
+}
+.card.red {
+  background: linear-gradient(135deg, #e85c4d, #7b3129);
+}
+.card.green {
+  background: linear-gradient(135deg, #278189, #11393d);
+}
+.card.greenyellow {
+  background: linear-gradient(135deg, #99d27b, #688f54);
+}
+.card .product {
+  height: 85%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.product .number {
+  font-size: 80px;
+  line-height: 80px;
+  font-style: italic;
+  opacity: 0.25;
+}
+.product .sneakers {
+  font-size: 35px;
+  line-height: 35px;
+  font-style: italic;
+  opacity: 0.7;
+}
+.product img {
+  height: 280px;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate3d(-35%, -45%, 0);
+  pointer-events: none;
+}
+.product .price {
+  background: rgba(255, 255, 255, 0.15);
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: -20px;
+  padding: 5px 20px;
+  border-radius: 99px 0 0 99px;
+}
+
+.card .title {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 12px 12px;
+  transform-style: preserve-3d;
+}
+.card.blue .title {
+  background: #039BE5;
+}
+.card.purple .title {
+  background: #5B1AE3;
+}
+.card.red .title {
+  background: #e54735;
+}
+.card.green .title{
+  background: #2f949e;
+}
+.card.card.greenyellow .title{
+  background: #6bac4a;
+}
+.card:hover .product img {
+  transform: translate3d(-50%, -40%, 80px);
+}
+.card:hover .product .number {
+  transform: translateZ(40px);
+  opacity: 1;
+}
+.card:hover .product .sneakers {
+  transform: translateZ(40px);
+  opacity: 0.85;
+}
+.card:hover .product .price {
+  transform: translateZ(20px);
+}
+.card:hover .title h2 {
+  transform: translateZ(20px);
+}
+
+.category{
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+}
+.categories a{
+  text-decoration: none; 
+  color: inherit;
+}
+.category a:hover{
+  background-color: transparent; 
+}
+.category img{
+  width: 250px;
+  height: 250px; 
+}
+.category p{
+  display: inline; 
+  margin: 0;
+  color: #666;
+}
+
+
+@media (max-width: 768px) {
+  .category{
+      width: 25%;
+  }
+}
+@media (max-width: 480px) {
+  .category{
+      width: 50%;
+  }
+}
+
+
+
+.footer{
+background-color: #032f5f;
+padding: 10px 0;
+}
+.footer-row{
+display:flex;
+flex-wrap: wrap;
+}
+.footer-links{
+width: 25%;
+padding: 0 15px;
+}
+.footer-links h4{
+font-size: 20px;
+color:white;
+font-weight: 500;
+border-bottom: 2px solid #00C3FF;
+padding-bottom: 10px;
+}
+.footer-links ul li a{
+font-size: 18px;
+text-decoration: none;
+color: #BBBBBB;
+display: block;
+margin-bottom: 15px;
+transition: all .3s ease;
+}
+.footer-links ul li a:hover {
+color: #FFFFFF;
+padding-left: 6px;
+}
+.social-link a {
+display: inline-block;
+min-height: 40px;
+width: 40px;
+background-color: rgba(255, 255, 255, 0.2);
+margin: 0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #FFFFFF;
+transition: all .5s ease;
+
+}
+.social-link a:hover {
+background-color: #00C3FF;
+
+}
+.copyright {
+background-color: #575656; /* Gris plomo */
+color: #fff; /* Texto blanco */
+text-align: center; /* Centra el texto */
+padding: 20px 0; /* Padding arriba y abajo para espacio */
+}
+
+.copyright p {
+margin: 10px 0; /* Margen para separar el texto de la imagen */
+}
+
+.copyright img {
+max-width: 100%; /* Asegura que la imagen no sea más grande que su contenedor */
+height: auto; /* Mantiene la relación de aspecto */
+}
+.image-container {
+width: 100%; /* Asegurarse de que el contenedor ocupe todo el ancho */
+overflow: hidden; /* Ocultar cualquier desbordamiento, en caso de que la imagen sea más ancha que la pantalla */
+margin: 40px 0;
+padding: 0; /* Remover cualquier relleno */
+}
+
+.full-width-image {
+width: 100vw; /* Ancho de la imagen al 100% del viewport width */
+height: auto; /* Ajuste automático de la altura para mantener la relación de aspecto */
+display: block; /* Eliminar cualquier espacio extra debajo de la imagen */
+}
+.testimonial-container {
+width: 100%;
+margin: 0 auto;
+text-align: center;
+font-family: Arial, sans-serif;
+display: flex;  /* Usamos flexbox para alinear los elementos en fila */
+justify-content: space-around;  /* Distribuye el espacio alrededor de cada elemento */
+align-items: flex-start;  /* Alinea los elementos en la parte superior */
+flex-wrap: wrap;  /* Permite que los elementos se envuelvan en la próxima línea si no hay espacio */
+}
+
+.testimonial-container h2 {
+width: 100%;
+font-size: 24px;
+color: #333;
+margin-bottom: 20px;
+}
+
+.testimonial {
+background-color: #f9f9f9;
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+flex: 1;  /* Cada testimonio se expandirá para tomar espacio disponible */
+margin: 10px;
+min-width: 250px;  /* Mínimo ancho para cada testimonio */
+}
+
+.rating {
+color: #ffc107;
+font-size: 28px;
+margin-bottom: 5px; /* Espacio adicional debajo de las estrellas */
+}
+
+.rating .gray {
+color: #ddd;
+}
+
+.author {
+font-weight: bold;
+color: #666;
+margin-top: 10px;
+}
+
+.testimonial p {
+color: #555;
+line-height: 1.6;
+font-style: italic;
+margin-bottom: 10px;
+}
+#InicarSesion {
+  background-color: #cff7d8;
+}
+
+#InicarSesion, #CrearCuenta {
+  flex: 1;  /* Cada sección toma la mitad del espacio */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#InicarSesion a, #CrearCuenta a {
+  width: 150px; /* Ajustado para un ancho más pequeño */
+  padding: 8px 15px; /* Padding reducido para hacer los botones más delgados */
+  background-color: #379754; /* Fondo verde para iniciar sesión */
+  color: white; /* Texto en blanco */
+  border-radius: 20px; /* Bordes redondeados */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  text-align: center; /* Texto centrado */
+  margin: 5px auto; /* Margen auto para centrar horizontalmente y reducir espacio vertical */
+  font-size: 14px; /* Fuente más pequeña para reducir el tamaño del texto */
+}
+
+#CrearCuenta a {
+  background-color: white; /* Fondo blanco para crear cuenta */
+  color: #379754; /* Texto verde */
+  border: 2px solid #379754; /* Borde verde */
+  text-align: center; /* Texto centrado */
+}
+
+#CrearCuenta a:hover, #InicarSesion a:hover {
+  background-color: #32974b; /* Verde oscuro al pasar el ratón */
+  color: white; /* Texto en blanco al pasar el ratón */
+  text-align: center; /* Texto centrado */
+}
+
+.dropdown-content a {
+  display: block;
+  background-color: #e9e8ee;
+  color: #32974b;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: #d4dcd6;
+}
+
+.dropdown-content h3, .dropdown-content p {
+  margin-bottom: 10px;
+}
+.navbar-icons .user-container:hover .dropdown-content {
+  display: flex; /* Muestra el contenido desplegable al pasar el ratón */
+  width: 450px;
+  transform: translateX(-20%); 
+}
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.2;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #82e648;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.form-register .botons {
+  width: 100%;
+  background: #82e648; /* Color original del botón */
+  border: none;
+  padding: 12px;
+  color: rgb(0, 0, 0);
+  margin: 16px 0;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Agrega transición suave */
+}
+
+.form-register .botons:hover {
+  background-color: #6fbf3b; /* Cambia el color de fondo cuando el mouse pasa sobre él */
+}
+/* Estilos para la página de Mis Pedidos */
+.mis-pedidos-titulo {
+  text-align: center;
+  color: #333;
+  font-size: 54px; /* Ajusta el tamaño según tus necesidades */
+  margin-top: 20px;
+}
+
+.mis-pedidos-lista {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.mis-pedidos-lista li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.mis-pedidos-lista li:last-child {
+  border-bottom: none;
+}
+
+.mis-pedidos-mensaje {
+  text-align: center;
+  color: #888;
+  font-size: 58px;
+  margin-top: 20px;
+}

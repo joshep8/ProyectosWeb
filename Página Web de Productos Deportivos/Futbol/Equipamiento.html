@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamiento</title>
+    <link rel="stylesheet" href="StyleFUT.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Imagenes/logoofic.jpg">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+            <button type="submit">Buscar</button>
+        </div>
+        <div class="user">
+            <a href="#"><img src="Imagenes/iconvent.jpg"></a>
+        </div>
+        <div class="cart">
+            <a href="#"><img src="Imagenes/Carrio.icon.jpg"></a>
+        </div>
+    </header>
+  
+    <nav id="Horizontal">
+        <div class="enlaces">
+            <a href="/Index/index.php">INICIO</a>  
+        </div>
+        <div class="dropdown">
+            <a href="#">TIENDA</a>  
+            <div class="dropdown-content">
+                <a href="/Futbol/futbol.html">Fútbol</a>
+                <a href="/Voley/Volleyball.html">Vóley</a>
+                <a href="/Tenis/tenis.html">Tennis</a>
+                <a href="/Basquet/basquetart2.php">Basquet</a>
+            </div>
+        </div>
+        <div class="enlaces">
+            <a href="/QuienesSomos/QuienesSomos.html">QUIENES SOMOS</a>
+        </div>
+        <div class="enlaces">
+            <a href="/Contacto/Contacto.html">CONTACTO</a>
+        </div>
+    </nav>
+    <br><br><br><br><br><br><br><br><br>
+    
+    <section>
+        <div class="item" id="Titulo">
+            <p>FÚTBOL/EQUIPAMIENTO</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="lateral">
+            <p>CATEGORIA</p>
+            <hr>
+            <div class="categoria">
+                <a href="Pelotas.html">Pelotas</a>
+                <a href="Equipamiento.html">Equipamiento</a>
+                <a href="Accesorios.html">Accesorios</a>
+            </div>
+            <br>
+            <hr>
+            <p>MARCA</p>
+            <hr>
+            <div class="marca">
+                <input type="checkbox" id="adidas" name="brand" value="Adidas">Adidas<br><br><br>
+                <input type="checkbox" id="nike" name="brand" value="Nike">Nike<br><br><br>
+                <input type="checkbox" id="puma" name="brand" value="Puma">Puma<br><br><br>
+            </div>
+        </section>
+
+        <section id="Futbol">
+            <div class="columna product" data-brand="Adidas">
+                <img id="Producto" src="https://falabella.scene7.com/is/image/FalabellaPE/17198233_1?wid=800&hei=800&qlt=70">
+                <h2 class="tipo">Adidas</h2>
+                <h3 class="titulo">Canilleras Unisex Fútbol Everlite</h3>
+                <h3 class="precio">
+                    <span style="text-decoration: line-through;">S/69.00</span> S/59.00
+                </h3>
+                <br>
+                <h3 class="añadir-carrito">
+                    <img class="icono-carrito" src="https://cdn-icons-png.flaticon.com/512/107/107831.png"> AÑADIR AL CARRITO
+                </h3>
+            </div>
+
+            <div class="columna product" data-brand="Nike">
+                <img id="Producto" src="https://home.ripley.com.pe/Attachment/WOP_5/2084324816132/2084324816132_2.jpg">
+                <h2 class="tipo">Nike</h2>
+                <h3 class="titulo">Zapatillas Fútbol para Hombre</h3>
+                <h3 class="precio">
+                    <span style="text-decoration: line-through;">S/259.00</span> S/219.00
+                </h3>
+                <br> <br>
+                <h3 class="añadir-carrito">
+                    <img class="icono-carrito" src="https://cdn-icons-png.flaticon.com/512/107/107831.png"> AÑADIR AL CARRITO
+                </h3>
+            </div>
+
+            <div class="columna product" data-brand="Adidas">
+                <img id="Producto" src="https://falabella.scene7.com/is/image/FalabellaPE/19888976_1?wid=1500&hei=1500&qlt=70">
+                <br>
+                <h2 class="tipo">Adidas</h2>
+                <h3 class="titulo">Guantes Fútbol para Hombre</h3>
+                <h3 class="precio">
+                    <span style="text-decoration: line-through;">S/190.00</span> S/170.00
+                </h3>
+                <br><br>
+                <h3 class="añadir-carrito">
+                    <img class="icono-carrito" src="https://cdn-icons-png.flaticon.com/512/107/107831.png"> AÑADIR AL CARRITO
+                </h3>
+            </div>
+    
+            <div class="columna product" data-brand="Puma">
+                <img id="Producto" src="https://falabella.scene7.com/is/image/FalabellaPE/gsc_125254444_4243963_1?wid=800&hei=800&qlt=70">
+                <h2 class="tipo">Puma</h2>
+                <h3 class="titulo">Camiseta Fútbol Entrenamiento MC</h3>
+                <h3 class="precio">
+                    <span style="text-decoration: line-through;">S/89.00</span> S/79.00
+                </h3>
+                <br>
+                <h3 class="añadir-carrito">
+                    <img class="icono-carrito" src="https://cdn-icons-png.flaticon.com/512/107/107831.png"> AÑADIR AL CARRITO
+                </h3>
+            </div>
+        </section>
+    </div>
+
+    <script src="filtro.js" defer></script>
+</body>
+</html>

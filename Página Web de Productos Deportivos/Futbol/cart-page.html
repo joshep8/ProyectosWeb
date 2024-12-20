@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito de Compras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cart-page-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Imagenes/logoofic.jpg">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+            <button type="submit">Buscar</button>
+        </div>
+        <div class="user">
+            <a href="#"><img src="Imagenes/iconvent.jpg"></a>
+        </div>
+        <div class="cart">
+            <a href="#"><img src="Imagenes/Carrio.icon.jpg"><span id="cart-count" class="cart-count">0</span></a>
+        </div>
+    </header>
+  
+    <nav id="Horizontal">
+        <div class="enlaces">
+        <a href="/Index/index.html" >INICIO</a>  
+    </div>
+
+    <div class="dropdown">
+        <a href="" >TIENDA</a>  
+        <div class="dropdown-content">
+            <a href="/Futbol/futbol.html">Fútbol</a>
+            <a href="/Voley/Volleyball.html">Vóley</a>
+            <a href="/Tenis/tenis.html">Tennis</a>
+            <a href="/Basquet/basquetart2.html">Básquet</a>
+        </div>
+    </div>
+
+    <div class="enlaces">
+        <a href="/QuienesSomos/QuienesSomos.html" >QUIENES SOMOS</a>
+    </div>
+    <div class="enlaces">
+        <a href="/Contacto/Contacto.css">CONTACTO</a>
+        </div>
+ 
+    </nav>
+    <main class="main-container">
+        <div class="cart-container">
+            <h1>Mi Carrito</h1>
+            <ul id="cart-items">
+                <!-- Elementos del carrito aquí -->
+            </ul>
+        </div>
+        <div class="summary-container">
+            <div class="order-summary">
+                <h2>Resumen del Pedido</h2>
+                <p class="total-amount">Total: <span id="cart-total">0</span></p>
+                <button onclick="window.history.back()">Seguir comprando</button>
+                <a href="realizarcompra.php" class="finalize-btn">Finalizar Compra</a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            
+            </div>
+          <div class="footer-row">
+        
+           <div class="footer-links">
+            <h4>SportCenter</h4>
+            <ul>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Nuestros sevicios</a></li>
+              <li><a href="#">Politica de privacidad</a></li>
+              <li><a href="#">Afiliate</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="#">Preguntas</a></li>
+              <li><a href="#">Compras</a></li>
+              <li><a href="#">Envios</a></li>
+              <li><a href="#">Estatus de orden</a></li>
+              <li><a href="#">Pago</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Tienda</h4>
+            <ul>
+              <li><a href="#">Ropa</a></li>
+              <li><a href="#">Zapatillas</a></li>
+              <li><a href="#">Telefonos</a></li>
+              <li><a href="#">Accesorios</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Siguenos</h4>
+            <div class="social-link">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+      
+          </div>
+         </div>
+        
+        </div>
+        
+      </footer>
+      <div class="copyright">
+        <p>&copy; 2024 Tienda de Equipos Deportivos. Todos los derechos reservados.</p>
+        <img src="/Index/imgpayment.png" alt="Pagos">
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>

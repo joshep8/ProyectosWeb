@@ -1,0 +1,302 @@
+/*ENCABEZADO*/
+
+header {
+    background-image: url('https://th.bing.com/th/id/OIP.NllQBmZgbbo4Nz2e6rjz4AHaHa?rs=1&pid=ImgDetMain'); 
+    background-size: cover;
+    background-position: center;
+    color: #32974b;
+    padding: 10px;
+    text-align: center;
+    width: 100%; /* Ancho del 100% de la ventana */
+    position: fixed; /* Fija el encabezado en la parte superior de la ventana */
+    top: 0; /* Coloca el encabezado en la parte superior */
+    z-index: 999; /* Asegura que el encabezado esté encima de otros elementos */
+    height: 120px; /* Aumenta la altura del encabezado */
+    display: flex; /* Usa flexbox para alinear verticalmente el contenido */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente con el máximo espacio entre ellos */
+    align-items: center; /* Alinea verticalmente el contenido en el centro */
+}
+
+.logo {
+    flex: 5; /* El logo ocupará una cuarta parte del encabezado */
+    width: 200px; /* Ajusta el ancho del contenedor del logo */
+    height: 100%; /* Altura automática para mantener la proporción de la imagen */
+}
+
+.search-bar {
+    flex: 10; /* Haciendo que el elemento search-bar ocupe más espacio */
+   
+}
+
+.search-bar input[type="text"] {
+    border: 2px solid transparent; /* Establecer el color del borde como transparente */
+    border-radius: 20px; 
+    background-color: #e9e8ee;
+    width: 80%; /* Hacer que la caja de texto ocupe el 80% del espacio disponible */
+    height: 30px; /* Ajustar la altura del campo de texto */
+}
+
+.search-bar button{
+    border: 2px solid transparent; /* Establecer el color del borde como transparente */
+    border-radius: 20px; 
+    background-color: #379754;
+    height: 30px; /* Ajustar la altura del campo de texto */
+}
+
+.user,
+.cart {
+    flex: 2; /* Los elementos restantes se dividirán en partes iguales */
+}
+
+.logo img {
+    width: 100%; /* La imagen del logo ocupará todo el espacio del contenedor */
+    height: 100%; /* Altura automática para mantener la proporción de la imagen */
+}
+
+.user img,
+.cart img {
+    width: 50px; /* Modifica el ancho de la imagen del usuario y del carrito */
+    height: auto; /* Altura automática para mantener la proporción de la imagen */
+}
+
+.dropdown-content h3 {
+    color:#379754;
+ 
+    }
+    .dropdown-content p {
+        color: black;
+     
+        }
+   
+     
+#InicarSesion{
+    background-color: #adf9bb;
+    color:#379754;
+}
+
+#InicarSesion a{
+    color:white;
+    width: 100px; 
+    background-color: #379754;
+    border-radius: 20px; 
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+#CrearCuenta a{
+    color:#379754;
+    width: 100px; 
+    background-color: white;
+    border-radius: 20px; 
+    border: 2px solid #379754;
+}
+
+#CrearCuenta a:hover {
+color:white;
+background-color:   #32974b;
+}
+
+.user .dropdown-content {
+    display: none;
+    position: right;
+    background-color: white;
+    width: 500px; /* Modifica el ancho de la ventana desplegable */
+    height: 200px; /* Modifica el alto de la ventana desplegable */
+
+    
+    transform: translateX(-50%); 
+}
+.user:hover .dropdown-content {
+    display: flex; 
+   
+}
+
+/****************/
+
+
+/******nav*****/
+
+
+
+#Horizontal {
+    background-image: url('https://cartaral.com/wp-content/uploads/2021/05/RAL-5026-Azul-noche-perlado.gif'); /* Cambia 'ruta/de/tu/imagen.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Fija la barra de navegación en la parte superior de la ventana */
+    top: 140px; /* Aumenta la distancia desde la parte superior para dejar espacio para el encabezado */
+   
+   
+    display: flex; /* Usando flexbox */
+    flex-wrap: wrap; /* Envolver las columnas si no caben en una sola fila */
+    justify-content: space-between; /* Espaciado uniforme entre las columnas */
+    
+ 
+}
+.enlaces a {
+    font: bold 18px Arial, sans-serif;
+    color: white;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.enlaces {
+    width: 20%; /* Ajustar el ancho para que tres columnas se ajusten con el espacio entre ellas */
+    text-align: center;
+    border: 2px solid transparent; /* Establecer el color del borde como transparente */
+    border-radius: 20px; 
+    transition: box-shadow 0.3s; /* Transición suave de la sombra */
+    margin: 0 auto; /* Centrar los enlaces */
+}
+
+.enlaces:hover {
+    background-color:   #2A3756;
+}
+
+.dropdown {
+    width: 20%; /* Ajustar el ancho para que tres columnas se ajusten con el espacio entre ellas */
+    text-align: center;
+    border: 2px solid transparent; /* Establecer el color del borde como transparente */
+    border-radius: 20px; 
+    transition: box-shadow 0.3s; /* Transición suave de la sombra */
+    margin: 0 auto; /* Centrar los enlaces */
+    }
+.dropdown a{
+    font: bold 18px Arial, sans-serif;
+    color: white;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+.dropdown:hover {
+    background-color:   #2A3756;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px; 
+    }
+
+   .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+
+
+
+
+/*************************/
+#contenido1{
+    width: 99%;
+    background-color: #e9e8ee;
+    font: bold 26px Verdana, sans-serif;
+    color: #379754;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    
+
+}
+
+#OvContra{
+ 
+    background-color: white;
+    max-width: 600px; /* Ancho máximo del contenido */
+    margin: auto; /* Margen automático para centrar */  
+    padding: 20px;
+   
+}
+
+#OvContra h3{
+   
+    color: black;
+}
+#OvContra p{
+    font-size: 16px; /* Tamaño de fuente */
+    color: black;
+    
+}
+
+
+.bot a{
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color:#379754;
+    width: 100px; 
+    background-color: white;
+    border-radius: 20px; 
+    border: 2px solid #379754;
+    margin-right: 50px; 
+}
+
+.bot a:hover {
+color:white;
+background-color:   #32974b;
+}
+
+.caja {
+    width: 550px;
+    height: 40px;
+    padding: 10px; /* Agregamos un poco de espacio alrededor del texto */
+    font-size: 16px; /* Tamaño de fuente */
+}
+.caja::placeholder {
+    color: gray; /* Color del texto de marcador de posición */
+}
+
+.caja:placeholder-shown::placeholder {
+    color: black; /* Color del texto de marcador de posición cuando está visible */
+}
+
+
+
+
+/****************/
+
+
+
+
+
+
+
+/*PIED DE PAGINA*/
+
+.footer {
+    background-color: #2A3756;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-content {
+    display: flex;
+justify-content: center;
+flex-wrap: wrap;
+text-align: center;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.footer-section {
+flex: 1;
+padding: 10px;
+box-sizing: border-box;
+min-width: 250px;
+}
+
+/****************************/
+
+

@@ -1,0 +1,414 @@
+/*ENCABEZADO*/
+
+header {
+    background-image: url('https://th.bing.com/th/id/OIP.NllQBmZgbbo4Nz2e6rjz4AHaHa?rs=1&pid=ImgDetMain'); 
+    background-size: cover;
+    background-position: center;
+    color: #32974b;
+    padding: 10px;
+    text-align: center;
+    width: 100%; /* Ancho del 100% de la ventana */
+    position: fixed; /* Fija el encabezado en la parte superior de la ventana */
+    top: 0; /* Coloca el encabezado en la parte superior */
+    z-index: 999; /* Asegura que el encabezado esté encima de otros elementos */
+    height: 120px; /* Aumenta la altura del encabezado */
+    display: flex; /* Usa flexbox para alinear verticalmente el contenido */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente con el máximo espacio entre ellos */
+    align-items: center; /* Alinea verticalmente el contenido en el centro */
+}
+
+.logo {
+    flex: 5; /* El logo ocupará una cuarta parte del encabezado */
+    width: 200px; /* Ajusta el ancho del contenedor del logo */
+    height: 100%; /* Altura automática para mantener la proporción de la imagen */
+}
+
+.search-bar {
+    flex: 10; /* Haciendo que el elemento search-bar ocupe más espacio */
+   
+}
+
+.search-bar input[type="text"] {
+    border: 2px solid transparent; /* Establecer el color del borde como transparente */
+    border-radius: 20px; 
+    background-color: #e9e8ee;
+    width: 80%; /* Hacer que la caja de texto ocupe el 80% del espacio disponible */
+    height: 30px; /* Ajustar la altura del campo de texto */
+}
+
+.search-bar button{
+    border: 2px solid transparent; /* Establecer el color del borde como transparente */
+    border-radius: 20px; 
+    background-color: #379754;
+    height: 30px; /* Ajustar la altura del campo de texto */
+}
+
+.user,
+.cart {
+    flex: 2; /* Los elementos restantes se dividirán en partes iguales */
+}
+
+.logo img {
+    width: 100%; /* La imagen del logo ocupará todo el espacio del contenedor */
+    height: 100%; /* Altura automática para mantener la proporción de la imagen */
+}
+
+.user img,
+.cart img {
+    width: 50px; /* Modifica el ancho de la imagen del usuario y del carrito */
+    height: auto; /* Altura automática para mantener la proporción de la imagen */
+}
+
+.dropdown-content h3 {
+    color:#379754;
+ 
+    }
+    .dropdown-content p {
+        color: black;
+     
+        }
+   
+     
+#InicarSesion{
+    background-color: #adf9bb;
+    color:#379754;
+}
+
+#InicarSesion a{
+    color:white;
+    width: 100px; 
+    background-color: #379754;
+    border-radius: 20px; 
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+#CrearCuenta a{
+    color:#379754;
+    width: 100px; 
+    background-color: white;
+    border-radius: 20px; 
+    border: 2px solid #379754;
+}
+
+#CrearCuenta a:hover {
+color:white;
+background-color:   #32974b;
+}
+
+.user .dropdown-content {
+    display: none;
+    position: right;
+    background-color: white;
+    width: 500px; /* Modifica el ancho de la ventana desplegable */
+    height: 200px; /* Modifica el alto de la ventana desplegable */
+
+    
+    transform: translateX(-50%); 
+}
+.user:hover .dropdown-content {
+    display: flex; 
+   
+}
+
+/****************/
+
+
+/******nav*****/
+
+
+
+#Horizontal {
+    background-image: url('https://cartaral.com/wp-content/uploads/2021/05/RAL-5026-Azul-noche-perlado.gif'); /* Cambia 'ruta/de/tu/imagen.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Fija la barra de navegación en la parte superior de la ventana */
+    top: 140px; /* Aumenta la distancia desde la parte superior para dejar espacio para el encabezado */
+   
+   
+    display: flex; /* Usando flexbox */
+    flex-wrap: wrap; /* Envolver las columnas si no caben en una sola fila */
+    justify-content: space-between; /* Espaciado uniforme entre las columnas */
+    
+ 
+}
+.enlaces a {
+    font: bold 18px Arial, sans-serif;
+    color: white;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.enlaces {
+    width: 20%; /* Ajustar el ancho para que tres columnas se ajusten con el espacio entre ellas */
+    text-align: center;
+    border: 2px solid transparent; /* Establecer el color del borde como transparente */
+    border-radius: 20px; 
+    transition: box-shadow 0.3s; /* Transición suave de la sombra */
+    margin: 0 auto; /* Centrar los enlaces */
+}
+
+.enlaces:hover {
+    background-color:   #2A3756;
+}
+
+.dropdown {
+    width: 20%; /* Ajustar el ancho para que tres columnas se ajusten con el espacio entre ellas */
+    text-align: center;
+    border: 2px solid transparent; /* Establecer el color del borde como transparente */
+    border-radius: 20px; 
+    transition: box-shadow 0.3s; /* Transición suave de la sombra */
+    margin: 0 auto; /* Centrar los enlaces */
+    }
+.dropdown a{
+    font: bold 18px Arial, sans-serif;
+    color: white;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+.dropdown:hover {
+    background-color:   #2A3756;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px; 
+    }
+
+   .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+/*****************************************/
+
+
+
+
+/****************/
+
+#Titulo1 {
+    width: 99%;
+    text-align: center;
+    background-color:#2A3756; ;
+    font: bold 26px Verdana, sans-serif;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    border-radius: 20px; 
+
+}
+
+#Titulo1 p {
+    font-size: 16px; /* Tamaño de fuente */
+    color:  white;
+
+}
+
+#contenido1{
+    width: 99%;
+    background-color: #e9e8ee;
+    font: bold 26px Verdana, sans-serif;
+    color: #379754;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    
+
+}
+
+#OvContra{
+ 
+    background-color: white;
+   
+    padding: 20px;
+   
+}
+
+#OvContra h3{
+   
+    color: black;
+}
+#OvContra p{
+    font-size: 16px; /* Tamaño de fuente */
+    color: black;
+    
+}
+#logo{
+    width: 300px;
+    height: 150px;
+    
+}
+
+
+/*PIED DE PAGINA*/
+
+.footer {
+    background-color: #2A3756;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-content {
+    display: flex;
+justify-content: center;
+flex-wrap: wrap;
+text-align: center;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.footer-section {
+flex: 1;
+padding: 10px;
+box-sizing: border-box;
+min-width: 250px;
+}
+
+/****************************/
+
+/****************************/
+
+
+
+/********** CRM*****************/
+
+/* Aplica un relleno de 2 rem a la etiqueta main y define la fuente y tamaño de texto */
+main {
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Establece el color del texto de los encabezados h2 */
+h2 {
+    color: #333;
+}
+
+/* Aplica estilo al formulario */
+form {
+    background: white; /* Fondo blanco */
+    padding: 1rem; /* Relleno de 1 rem */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera */
+}
+
+/* Estilo para las etiquetas de los campos del formulario */
+label {
+    display: block; /* Se muestra como un bloque */
+    margin: 0.5rem 0 0.2rem; /* Márgenes alrededor */
+}
+
+/* Estilo para los campos de entrada */
+input {
+    width: 100%; /* Ocupa el 100% del contenedor */
+    padding: 0.5rem; /* Relleno interno */
+    margin-bottom: 1rem; /* Margen inferior */
+    border: 1px solid #ccc; /* Borde de 1px color gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilo para los botones */
+button {
+    padding: 0.7rem; /* Relleno interno */
+    background: #4CAF50; /* Fondo verde */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano */
+}
+
+/* Estilo para los botones al pasar el ratón por encima */
+button:hover {
+    background: #45a049; /* Fondo verde más oscuro */
+}
+
+/* Estilo específico para el botón de actualización */
+#update-btn {
+    background: #2196F3; /* Fondo azul */
+}
+
+/* Estilo del botón de actualización al pasar el ratón por encima */
+#update-btn:hover {
+    background: #1e88e5; /* Fondo azul más oscuro */
+}
+
+/* Estilo para la tabla */
+table {
+    width: 100%; /* Ocupa el 100% del contenedor */
+    margin-top: 2rem; /* Margen superior */
+    border-collapse: collapse; /* Sin espacios entre celdas */
+}
+
+/* Estilo para las celdas de la tabla */
+th, td {
+    padding: 1rem; /* Relleno interno */
+    border: 1px solid #ddd; /* Borde de 1px color gris claro */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilo para el encabezado de la tabla */
+thead {
+    background: #f9f9f9; /* Fondo gris claro */
+}
+
+/* Estilo para las filas pares del cuerpo de la tabla */
+tbody tr:nth-child(even) {
+    background: #f4f4f4; /* Fondo gris claro */
+}
+
+/* Estilo para los botones dentro de las acciones */
+.actions button {
+    padding: 0.5rem; /* Relleno interno */
+    background: #f44336; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano */
+    margin-right: 0.5rem; /* Margen derecho */
+}
+
+/* Estilo para los botones de acciones al pasar el ratón por encima */
+.actions button:hover {
+    background: #e53935; /* Fondo rojo más oscuro */
+}
+
+/* Estilo para la sección de búsqueda de clientes */
+#search-client {
+    margin-top: 2rem; /* Margen superior */
+}
+
+/* Estilo para el campo de búsqueda */
+#search {
+    width: 100%; /* Ocupa el 100% del contenedor */
+    padding: 0.5rem; /* Relleno interno */
+    border: 1px solid #ccc; /* Borde de 1px color gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-bottom: 1rem; /* Margen inferior */
+}
+
+
+
+
+
+
+
+
+
